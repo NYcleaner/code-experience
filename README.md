@@ -51,11 +51,12 @@ sudo apt-get install openjdk-7-jdk
 gedit ~/.bashrc
 export PATH=$PATH:/home/your_name/spark-1.5.2-bin-hadoop2.6/bin
 ```
-'''from pyspark import SparkContext, SparkConf
+```
+from pyspark import SparkContext, SparkConf
 from pyspark.sql import SQLContext
 
 conf = (SparkConf()
     .set("spark.driver.maxResultSize", "2g"))
 sc = SparkContext(conf=conf)
 sqlc = SQLContext(sc)
-’‘’
+```
