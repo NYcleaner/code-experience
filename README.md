@@ -93,8 +93,9 @@ linux和windows系统不同，linux不会产生无用垃圾文件，但是在升
 /var/cache/apt/archives
 ```
 没有下载完的在：
-```/var/cache/apt/archives/partial
-   ```
+```
+/var/cache/apt/archives/partial
+```
 
 ##二、删除软件
 
