@@ -77,12 +77,12 @@ linux和windows系统不同，linux不会产生无用垃圾文件，但是在升
 这三个命令主要清理升级缓存以及无用包的。
 
 ###2，清理opera firefox的缓存文件：
-ls ~/.opera/cache4
-ls ~/.mozilla/firefox/*.default/Cache
+```ls ~/.opera/cache4```
+```ls ~/.mozilla/firefox/*.default/Cache```
 
 ###3，清理Linux下孤立的包：
 终端命令下我们可以用：
-sudo apt-get install deborphan -y
+```sudo apt-get install deborphan -y```
 
 ###4，卸载：tracker
 这个东西一般我只要安装ubuntu就会第一删掉tracker 他不仅会产生大量的cache文件而且还会影响开机速度。所以在新得利里面删掉就行。
@@ -91,6 +91,7 @@ sudo apt-get install deborphan -y
 包管理的临时文件目录:
 包在
 ```/var/cache/apt/archives```
+
 没有下载完的在
 ```/var/cache/apt/archives/partial```
 
@@ -115,7 +116,7 @@ ubuntu软件的删除一般用“ubuntu软件中心”或“新立得”就能�
 ###3，最后小心翼翼地删除吧
 ```sudo apt-get remove linux-image-2.6.32-22-generic```
 
-####ps：linux-image-xxxxxx-generic    就是要删除的内核版本
+####ps：```linux-image-xxxxxx-generic```    就是要删除的内核版本
 还有
 ```linux-headers-xxxxxx```
 ```linux-headers-xxxxxx-generic```
