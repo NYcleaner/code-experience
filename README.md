@@ -99,10 +99,19 @@ linux和windows系统不同，linux不会产生无用垃圾文件，但是在升
 ##二、删除软件
 
 ubuntu软件的删除一般用“ubuntu软件中心”或“新立得”就能搞定，但有时用命令似乎更快更好～～
-```sudo apt-get remove --purge ```软件名
-```sudo apt-get autoremove ```         删除系统不再使用的孤立软件
-```sudo apt-get autoclean  ```          清理旧版本的软件缓存
-```dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P ```  清除残余的配置文件
+```
+sudo apt-get remove --purge 软件名
+```
+```
+sudo apt-get autoremove
+```         
+删除系统不再使用的孤立软件
+
+```sudo apt-get autoclean  ```          
+清理旧版本的软件缓存
+
+```dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P ``` 
+清除残余的配置文件
 
 保证干净。
 
